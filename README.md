@@ -11,7 +11,7 @@ it is intended for frames containing the information:
 ### Decodeur_full
 it is the most classic version of each information and precede it with its identifier and the order does not matter nor the presence or not of all the information. This is the most flexible version. 
 
-### Decodeur_10(To be used for the application""""Supagrohydaulic""")
+### Decodeur_10(To be used for the application ```Supagrohydaulic```)
 version without identifiers. the order must therefore be respected imperatively.
 it accepts 2 types of messages:
 -heartbeat (only alert and battery)
@@ -31,7 +31,7 @@ It's big edian coding. So we start with the most significant bytes.
 ```idx +=4 ; ```
 ### readInt16BE and readInt16BE 
 ```idx +=2 ; ```
-###readInt8 and readInt8
+### readInt8 and readInt8
 ```idx +=1 ; ```
 ### readUInt4H and readUInt4L
 it is 2 function is used in a row without advancing the idx. the first reads the 4 most significant bits, the second the least significant 4 bits. 
